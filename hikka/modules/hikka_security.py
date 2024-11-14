@@ -603,7 +603,7 @@ class HikkaSecurityMod(loader.Module):
         await self._add_to_group(message, "owner")
 
     @loader.command()
-    async def ownerrm(self, message: Message):
+    async def ownerdel(self, message: Message):
         if not (user := await self._resolve_user(message)):
             return
 
@@ -619,7 +619,7 @@ class HikkaSecurityMod(loader.Module):
         )
 
     @loader.command()
-    async def ownerlist(self, message: Message):
+    async def owners(self, message: Message):
         _resolved_users = []
         for user in set(self._client.dispatcher.security.owner + [self.tg_id]):
             with contextlib.suppress(Exception):
