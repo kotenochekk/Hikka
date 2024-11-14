@@ -34,8 +34,8 @@ class HikkaInfoMod(loader.Module):
                 ),
             ),
             loader.ConfigValue(
-                "banner_url",
-                "https://github.com/hikariatama/assets/raw/master/hikka_banner.mp4",
+                "baner_url",
+                "https://imgur.com/a/bYAInj3",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
