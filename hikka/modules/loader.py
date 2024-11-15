@@ -71,6 +71,7 @@ class LoaderMod(loader.Module):
             loader.ConfigValue(
                 "MODULES_REPO",
                 "https://mods.hikariatama.ru",
+                "https://github.com/kotenochekk/codeer_kot/raw/main",
                 lambda: self.strings("repo_config_doc"),
                 validator=loader.validators.Link(),
             ),
