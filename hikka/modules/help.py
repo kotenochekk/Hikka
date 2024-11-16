@@ -34,9 +34,9 @@ class Help(loader.Module):
             ),
             loader.ConfigValue(
                 "plain_emoji",
-                "▫️",
+                "🪬",
                 lambda: "Plain module bullet",
-                validator=loader.validators.Emoji(length=1),
+                validator=loader.validators.Emoji(length=100),
             ),
             loader.ConfigValue(
                 "empty_emoji",
@@ -370,9 +370,9 @@ class Help(loader.Module):
         )
 
     @loader.command()
-    async def support(self, message):
+    async def kotik(self, message):
         if message.out:
-            await self.request_join("@hikka_talks", self.strings("request_join"))
+            await self.request_join("@codeer_kot", self.strings("request_join"))
 
         await utils.answer(
             message,
